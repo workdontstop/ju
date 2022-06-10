@@ -16,7 +16,6 @@ app.use(
   })
 );
 
-app.use(express.static(path.join(__dirname, "client/build")));
 app.use(express.json({ limit: "400mb" }));
 app.use(express.urlencoded({ limit: "300mb" }));
 app.use(cookieParser());
