@@ -580,6 +580,6 @@ app.post(
   }
 );
 
-app.listen("1000", (): any => {
+app.listen(process.env.PORT || "1000", (): any => {
   console.log("running");
 });
