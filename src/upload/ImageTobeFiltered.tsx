@@ -1,7 +1,6 @@
 import React, { useRef, useState, useEffect } from "react";
-import { Grid } from "@material-ui/core";
-import { useSpring, animated } from "react-spring";
-import { useSelector, useDispatch } from "react-redux";
+
+
 
 function ImageTobeFilteredx({
   itemUploadRef,
