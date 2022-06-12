@@ -104,8 +104,8 @@ function LoginButtonsx({ OpenModalForm }: ILogButtons) {
       item
       style={{ marginTop: matchMobile ? "1.5vh" : "0px" }}
     >
-      <Grid item sm={3} md={5}></Grid>
-      <Grid item className="buttonpad buttonshake" xs={12} sm={6} md={2}>
+      <Grid item xs={1} sm={3} md={5}></Grid>
+      <Grid item className="buttonpad buttonshake" xs={10} sm={6} md={2}>
         <Button
           onClick={() => OpenModalForm(1)}
           style={{
@@ -131,8 +131,8 @@ function LoginButtonsx({ OpenModalForm }: ILogButtons) {
         style={{ padding: matchTablet ? "9px" : "6px" }}
       ></Grid>
 
-      <Grid item sm={3} md={5}></Grid>
-      <Grid item className="buttonpad buttonshake" xs={12} sm={6} md={2}>
+      <Grid item xs={1} sm={3} md={5}></Grid>
+      <Grid item className="buttonpad buttonshake" xs={10} sm={6} md={2}>
         <Button
           onClick={() => OpenModalForm(0)}
           style={{
