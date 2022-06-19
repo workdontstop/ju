@@ -12,12 +12,12 @@ app.use(
     credentials: true,
     /////origin: "http://192.168.43.137:3000",
     //// origin: "http://localhost:3000",
-    origin: "http://192.168.43.136:3000",
+    origin: "http://localhost:3000",
   })
 );
 
 app.use(express.json({ limit: "400mb" }));
-app.use(express.urlencoded({ limit: "300mb" }));
+app.use(express.urlencoded({ limit: "400mb" }));
 app.use(cookieParser());
 const bcrypt = require("bcrypt");
 const { createTokens, validateToken, createTokensUpdate } = require("./jwt");
@@ -580,6 +580,6 @@ app.post(
   }
 );
 
-app.listen(process.env.PORT || "1000", (): any => {
+app.listen("1000", (): any => {
   console.log("running");
 });
