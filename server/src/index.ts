@@ -35,6 +35,13 @@ const CONNECTION_CONFIG = {
 // Node.js program to demonstrate the
 // Date.format() method
 
+const root = require("path").join(__dirname, "../../", "build");
+app.use(express.static(root));
+
+app.use("/*", (req, res) => {
+  res.sendFile(path.join(__dirname, "../../", "build", "index.html"));
+});
+
 ///
 ///
 ///
