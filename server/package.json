@@ -5,6 +5,7 @@
   "scripts": {
     "shivkumarscript": "ts-node -T -P server/tsconfig.json server/index.ts",
     "start": "node ./build/index.js",
+    "star": "node ./src/index.js",
     "build": "tsc -p .",
     "dev": "nodemon ./src/index.ts",
     "test": "echo \"Error: no test specified\" && exit 1",

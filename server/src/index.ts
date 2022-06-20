@@ -93,6 +93,8 @@ const updatebillboardPic = `UPDATE members SET billboard1 = ?  WHERE (id = ?)`;
 
 const createpost = `INSERT INTO posts (sender,post_count,topic,caption,item1,itemtype1,item2,itemtype2,item3,itemtype3,item4,itemtype4,item5,itemtype5,item6,itemtype6,item7,itemtype7,item8,itemtype8,time) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)`;
 
+app.get("/", (req, res) => res.send("hello it worked"));
+
 const storage = multer.diskStorage({
   destination: function (req: any, file: any, callback: any) {
     var dir = "../public/images/posts";
