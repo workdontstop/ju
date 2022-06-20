@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
+    "shivkumarscript": "ts-node -T -P server/tsconfig.json server/index.ts",
     "start": "node ./build/index.js",
     "build": "tsc -p .",
     "dev": "nodemon ./src/index.ts",
