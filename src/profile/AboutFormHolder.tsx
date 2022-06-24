@@ -341,7 +341,7 @@ function AboutFormHolderx({
                   [name]: false,
                 });
               } else {
-                Axios.post(`http://${REACT_APP_SUPERSTARZ_URL}/usernamecheck`, {
+                Axios.post(`${REACT_APP_SUPERSTARZ_URL}/usernamecheck`, {
                   value: finalUsername,
                 })
                   .then((response) => {
@@ -544,7 +544,7 @@ function AboutFormHolderx({
         !cleanSignupValues.inputedUsername
       ) {
         Axios.put(
-          `http://${REACT_APP_SUPERSTARZ_URL}/update_basic`,
+          `${REACT_APP_SUPERSTARZ_URL}/update_basic`,
           { values: aboutboy },
           {
             withCredentials: true,

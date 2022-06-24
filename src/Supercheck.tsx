@@ -247,7 +247,7 @@ function Supercheck() {
   };
   const rememberUser = () => {
     Axios.post(
-      `http://${REACT_APP_SUPERSTARZ_URL}/keepmeloggedin`,
+      `${REACT_APP_SUPERSTARZ_URL}/keepmeloggedin`,
       {
         values: rememberMeType,
       },

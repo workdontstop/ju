@@ -88,7 +88,7 @@ function App(): JSX.Element {
   ///
   ///MODAL ZOOMED STATE
   useEffect(() => {
-    Axios.post(`http://${REACT_APP_SUPERSTARZ_URL}/checkIsLogged`, {
+    Axios.post(`${REACT_APP_SUPERSTARZ_URL}/checkIsLogged`, {
       withCredentials: true,
     })
       .then((response) => {

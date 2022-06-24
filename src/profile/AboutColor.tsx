@@ -142,7 +142,7 @@ function AboutColorx({ zoomed }: any): JSX.Element {
       }
 
       Axios.put(
-        `http://${REACT_APP_SUPERSTARZ_URL}/update_color`,
+        `${REACT_APP_SUPERSTARZ_URL}/update_color`,
         { values: colorboy },
         {
           withCredentials: true,

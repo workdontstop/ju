@@ -167,7 +167,7 @@ function FormHolderx({
   ///
   ///
   ///LOGGING UPDATE VALUES DETAILS
-  
+
   const initialLogValue = {
     inputedUsername: "",
     inputedPassword: "",
@@ -224,7 +224,7 @@ function FormHolderx({
       dispatch(ActivateLoaderAction());
 
       Axios.post(
-        `http://${REACT_APP_SUPERSTARZ_URL}/loging`,
+        `${REACT_APP_SUPERSTARZ_URL}/loging`,
         {
           values: cleanLoginValues,
         },
@@ -548,7 +548,7 @@ function FormHolderx({
                   [name]: false,
                 });
               } else {
-                Axios.post(`http://${REACT_APP_SUPERSTARZ_URL}/usernamecheck`, {
+                Axios.post(`${REACT_APP_SUPERSTARZ_URL}/usernamecheck`, {
                   value: finalUsername,
                 })
                   .then((response) => {
@@ -717,12 +717,9 @@ function FormHolderx({
                 ) {
                   dispatch(ActivateLoaderAction());
 
-                  Axios.post(
-                    `http://${REACT_APP_SUPERSTARZ_URL}/registration`,
-                    {
-                      values: cleanSignupValues,
-                    }
-                  )
+                  Axios.post(`${REACT_APP_SUPERSTARZ_URL}/registration`, {
+                    values: cleanSignupValues,
+                  })
                     .then((response) => {
                       if (response.data.message === "username not unique") {
                         setServerErrorData("username is taken");

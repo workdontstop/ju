@@ -521,6 +521,6 @@ app.post("/registration", express_validator_1.body("values.inputedEmail")
         }));
     }
 }));
-app.listen("1000", () => {
+app.listen(1000, () => {
     console.log("running");
 });

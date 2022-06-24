@@ -419,7 +419,7 @@ function UploadProfilePicx({
       formData.append("finalxxy", a, `blob${id}${datevalue}`);
 
       Axios.post(
-        `http://${REACT_APP_SUPERSTARZ_URL}/billboard_upload`,
+        `${REACT_APP_SUPERSTARZ_URL}/billboard_upload`,
         formData,
         {
           headers: {
@@ -463,7 +463,7 @@ function UploadProfilePicx({
       formData.append("finalxx", a, `blob${id}${datevalue}`);
 
       Axios.post(
-        `http://${REACT_APP_SUPERSTARZ_URL}/profile_upload`,
+        `${REACT_APP_SUPERSTARZ_URL}/profile_upload`,
         formData,
         {
           headers: {

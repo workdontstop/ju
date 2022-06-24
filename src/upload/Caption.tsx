@@ -183,7 +183,7 @@ function Captionx({
         formData.append("final", a[i], `blob${i}${datevalue}`);
       }
 
-      Axios.post(`http://${REACT_APP_SUPERSTARZ_URL}/upload`, formData, {
+      Axios.post(`${REACT_APP_SUPERSTARZ_URL}/upload`, formData, {
         headers: {
           "Content-Type": "multipart/form-data",
         },

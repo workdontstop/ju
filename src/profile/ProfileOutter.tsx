@@ -222,7 +222,7 @@ function ProfileOutter() {
   ///DOT ENV DATA
 
   const callfeeds = () => {
-    Axios.post(`http://${REACT_APP_SUPERSTARZ_URL}/feeds_chronological`, {
+    Axios.post(`${REACT_APP_SUPERSTARZ_URL}/feeds_chronological`, {
       withCredentials: true,
     })
       .then((response) => {
